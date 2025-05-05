@@ -11,6 +11,7 @@ public class Main {
 
         System.out.print("¿El coche es con cambio automático? (s/n): ");
         String esAutomaticoStr = scanner.nextLine();
+        //Comprobar si es automatico y ignorar mayuscula
         boolean esAutomatico = esAutomaticoStr.equalsIgnoreCase("s");
 
         System.out.print("Introduce el número de marchas del coche: ");
@@ -28,6 +29,7 @@ public class Main {
             vMaximas[4] = 120;
             coche.setVelocidadesMaximas(vMaximas);
         } else {
+            //La primera marcha es la 3
             coche = new CocheManual(matricula, numeroMarchas);
 
             int[] vMaximas = coche.getVelocidadesMaximas();
