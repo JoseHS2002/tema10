@@ -12,6 +12,11 @@ public class Poligno {
         this.v = new ArrayList<>(v);
     }
 
+    /**
+     * Desplazamos los puntos.
+     * @param desX
+     * @param desY
+     */
     public void trasladar(double desX, double desY) {
         for (Punto punto : v) {
             punto.x += desX;
