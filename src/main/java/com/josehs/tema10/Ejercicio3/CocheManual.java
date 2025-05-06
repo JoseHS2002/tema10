@@ -8,7 +8,7 @@ public class CocheManual extends Coche{
 
     @Override
     public void cambiarMarcha(int nuevaMarcha) {
-        if (nuevaMarcha >= 0 && nuevaMarcha < getVelocidadesMaximas().length) {
+        if (nuevaMarcha >= 0 && nuevaMarcha-1 < getVelocidadesMaximas().length) {
             super.cambiarMarcha(nuevaMarcha);
         }
     }

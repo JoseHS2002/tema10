@@ -17,10 +17,6 @@ public class Coche {
         return matricula;
     }
 
-    public void setMatricula(String matricula) {
-        this.matricula = matricula;
-    }
-
     public int getVelocidadActual() {
         return vActual;
     }
